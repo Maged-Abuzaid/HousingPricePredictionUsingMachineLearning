@@ -21,19 +21,19 @@ By carefully following these steps, the project demonstrated how well-designed p
 This project aims to predict house prices using the Ames Housing Dataset. The project demonstrates how to build a machine learning pipeline that includes data preprocessing, model training (using Ridge and Lasso regression), and model evaluation. The goal is to accurately predict the sale price of houses based on a variety of features.
 
 ## Features
-- Data preprocessing: Handles missing values, creates new features, and performs one-hot encoding.
-- Model training: Uses Ridge and Lasso regression models with hyperparameter tuning using GridSearchCV.
-- Model evaluation: Evaluates the model's performance using key metrics like MAE, MSE, RMSE, and R², and visualizes residual plots.
-- Cross-validation: Optionally performs cross-validation on training data to assess model performance.
-- Model persistence: Saves the best model for later use.
+- **Data Preprocessing**: Handles missing values, creates new features, and performs one-hot encoding.
+- **Model Training**: Uses Ridge and Lasso regression models with hyperparameter tuning using GridSearchCV.
+- **Model Evaluation**: Evaluates the model's performance using key metrics like MAE, MSE, RMSE, and R², and visualizes residual plots.
+- **Cross-validation**: Optionally performs cross-validation on training data to assess model performance.
+- **Model Persistence**: Saves the best model for later use.
 
 ## Technologies Used
-- Python: The programming language used for the project.
-- Pandas: For data manipulation and analysis.
-- NumPy: For numerical operations.
-- Scikit-learn: For machine learning, including Ridge and Lasso regression, GridSearchCV, and evaluation metrics.
-- Matplotlib: For visualizing residual plots.
-- Joblib: For saving and loading the trained model.
+- **Python**: The programming language used for the project.
+- **Pandas**: For data manipulation and analysis.
+- **NumPy**: For numerical operations.
+- **Scikit-learn**: For machine learning, including Ridge and Lasso regression, GridSearchCV, and evaluation metrics.
+- **Matplotlib**: For visualizing residual plots.
+- **Joblib**: For saving and loading the trained model.
 
 ## Project Structure
 ```
@@ -45,12 +45,13 @@ House_Price_Prediction/
 │   ├── preprocess.py            # Data loading and preprocessing.
 │   ├── model.py                 # Model training and hyperparameter tuning.
 │   ├── evaluate.py              # Model evaluation and performance metrics.
-├── house_price_prediction.py    # Main script that orchestrates the pipeline.
-└── requirements.txt             # List of dependencies (e.g., numpy, pandas, scikit-learn).
+├── main.py                      # Main script that orchestrates the pipeline.
+├── requirements.txt             # List of dependencies (e.g., numpy, pandas, scikit-learn).
+└── README.md                    # Project overview and instructions.
 ```
 
 ## Files:
-- **house_price_prediction.py**: The main script that runs the entire machine learning pipeline from data preprocessing to model evaluation.
+- **main.py**: The main script that runs the entire machine learning pipeline from data preprocessing to model evaluation.
 - **preprocess.py**: Handles the data loading, cleaning, and preprocessing steps (e.g., handling missing values, feature creation, one-hot encoding).
 - **model.py**: Contains the logic for training Ridge and Lasso models, including hyperparameter tuning using GridSearchCV.
 - **evaluate.py**: Evaluates the model using performance metrics such as MAE, MSE, RMSE, and R², and generates residual plots.
@@ -73,7 +74,7 @@ cd House_Price_Prediction
 ```bash
 python -m venv venv
 source venv/bin/activate  # On macOS/Linux
-venv\Scripts\activate     # On Windows
+venv\Scriptsctivate     # On Windows
 ```
 
 ### Step 3: Install the required dependencies
@@ -85,7 +86,7 @@ pip install -r requirements.txt
 ### Step 4: Run the project
 You can now run the pipeline by executing the main script:
 ```bash
-python house_price_prediction.py
+python main.py
 ```
 
 ## Usage

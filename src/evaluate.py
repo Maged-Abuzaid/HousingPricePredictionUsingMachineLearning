@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 
 # Major Task: Define a function to evaluate the performance of the model
-def evaluate_model(model, x_test, y_test, x_train=None, y_train=None):  # 'def' defines the function named 'evaluate_model'. It takes a trained model and test data, with optional training data for cross-validation.
+def evaluate_model(model, x_test, y_test, x_train=None, y_train=None):
     """
     Evaluates the given model on test data and computes various performance metrics. Optionally, performs cross-validation on training data.  # A docstring explaining what the function does.
     Parameters:
@@ -55,3 +55,5 @@ def evaluate_model(model, x_test, y_test, x_train=None, y_train=None):  # 'def' 
     plt.ylabel("Residuals")  # Labels the y-axis as 'Residuals'.
     plt.show()  # Displays the plot on the screen.
     logging.info("Displayed residual plot.")  # Logs that the residual plot was displayed.
+
+
